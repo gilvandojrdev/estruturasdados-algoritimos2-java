@@ -21,15 +21,25 @@ public class Vetor {
 //        }
 //    }
 
-    public void adicionarElemento(String elemento) throws Exception{
+//    public void adicionarElemento(String elemento) throws Exception{
+//
+//        if (this.tamanho < this.elementos.length){
+//            this.elementos[this.tamanho] = elemento;
+//            this.tamanho++;
+//        } else {
+//            throw new Exception("Vetor está cheio não é possivel adicionar mais elementos");
+//        }
+//
+//    }
 
-        if (this.tamanho < this.elementos.length){
+    public boolean adicionarElemento(String elemento) {
+
+        if (this.tamanho < this.elementos.length) {
             this.elementos[this.tamanho] = elemento;
             this.tamanho++;
-        } else {
-            throw new Exception("Vetor está cheio não é possivel adicionar mais elementos");
+            return true;
         }
 
+        return false;
     }
-
 }
