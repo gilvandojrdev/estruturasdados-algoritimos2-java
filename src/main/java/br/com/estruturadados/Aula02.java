@@ -6,6 +6,7 @@ public class Aula02 {
     static void main(String[] args) {
         Vetor vetor = new Vetor(2);
 
+        // Tratamento de erros
         try {
             vetor.adicionarElemento("elemento01");
             vetor.adicionarElemento("elemento02");
