@@ -59,6 +59,15 @@ public class Vetor {
 
     }
 
+    public int buscaSequencial(String elemento){
+        for (int i = 0; i < this.tamanho; i++) {
+            if(this.elementos[i].equals(elemento)){
+                return i;
+            }
+        }
+        return -1;
+    }
+
     @Override
     public String toString() {
 
